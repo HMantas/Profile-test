@@ -122,22 +122,25 @@ h4 {
 /* Hero section */
 
 .hero {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.hero-wrap {
+  width: 200px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+/* About section */
+
+.about {
   padding: 50px;
   width: 100%;
   min-height: 600px;
   margin: 0 auto;
   background:#23242a;
-}
-
-.hero-wrap:nth-child(1) {
-  margin-bottom: 10px;
-}
-
-.hero-wrap {
-  /* display: grid; */
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-flow: column;
-  
 }
 
 .img {
