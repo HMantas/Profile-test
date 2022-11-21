@@ -205,6 +205,49 @@ h4 {
   border-radius: 8px;
 }
 
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.credits p {
+  color: #45f3ff;
+  font-size: 14px;
+}
+
+.socials {
+  margin: 0 0 20px 0;
+  width: 200px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__icon:hover {
+  cursor: pointer;
+  border: 2px solid #45f3ff;
+  border-radius: 50%;
+}
+.social__icon {
+  cursor: pointer;
+  width: 40px;
+}
+
+.socials ul {
+  display: flex;
+  gap: 15px;
+}
+
+.socials ul li {
+  list-style: none;
+}
 
 
 
