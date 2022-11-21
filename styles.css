@@ -122,16 +122,6 @@ h4 {
   font-size: 33px;
 }
 
-/* Video */
-
-.media {
-  position: relative;
-  z-index: -2;
-  top: -150px;
-  min-width: 380px;
-  overflow: hidden;
-}
-
 /* Hamburger menu */
 
 .hamburger {
@@ -179,10 +169,19 @@ h4 {
   font-size: 42px;
 }
 
+/* Video */
+
+.media {
+  overflow: hidden;
+  position: relative;
+  top: -133px;
+  z-index: -2;
+}
+
 /* About section */
 
 .about {
-  padding: 0 50px 50px 50px;
+  padding: 50px;
   width: 100%;
   min-height: 600px;
   margin: 0 auto;
