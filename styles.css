@@ -139,11 +139,9 @@ h4 {
   display: block;
   width: 25px;
   height: 3px;
-  background: #fff;
+  background: #45f3ff;
   margin: 5px auto;
 }
-
-
 
 
 /* Hero section */
@@ -195,20 +193,34 @@ h4 {
 }
 
 
+
+
 @media  (max-width: 500px) {
   .nav-links {
     position: fixed;
     left: -100%;
     top: 80px;
+    padding: 0 0 20px 0;
     flex-direction: column;
     width: 100%;
     text-align: center;
     transition: 0.3s;
     background-color: #1c1c1c;
-    /* border-bottom: 3px solid #eb7b19; */
+    border-bottom: 3px solid #45f3ff;
+    gap: 40px;
   }
 
-  .nav-links.active {
+  .hamburger.burger-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(-45deg);
+  }
+  .hamburger.burger-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.burger-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(45deg);
+  }
+
+  .active {
     left: 0;
   }
   
@@ -218,8 +230,11 @@ h4 {
     margin-bottom: 80px;
   }
 
-  .margin {
+  .margin-80 {
     margin-top: 80px;
+  }
+  .margin-20 {
+    margin: 20px 0;
   }
 
   .hamburger {
