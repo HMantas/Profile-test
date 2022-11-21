@@ -215,6 +215,11 @@ h4 {
   .fixed {
     position: fixed;
     top: 0;
+    margin-bottom: 80px;
+  }
+
+  .margin {
+    margin-top: 80px;
   }
 
   .hamburger {
