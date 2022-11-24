@@ -231,8 +231,9 @@ footer {
 }
 
 .social__icon:hover {
+  transition: 0.5s;
   cursor: pointer;
-  border: 2px solid #45f3ff;
+  border: 1.4px solid #45f3ff;
   border-radius: 50%;
 }
 .social__icon {
@@ -249,21 +250,30 @@ footer {
   list-style: none;
 }
 
+.hidden {
+  display: none;
+}
+
 
 
 @media  (max-width: 500px) {
   .nav-links {
     position: fixed;
+    height: 100%;
     left: -100%;
     top: 80px;
-    padding: 0 0 20px 0;
+    padding: 100px 0 100px 0;
     flex-direction: column;
     width: 100%;
     text-align: center;
     transition: 0.3s;
     background-color: #1c1c1c;
-    border-bottom: 3px solid #45f3ff;
-    gap: 40px;
+    gap: 220px;
+  }
+
+  .nav-link a {
+    font-weight: 700;
+    font-size: 23px;
   }
 
   .hamburger.burger-active .bar:nth-child(1) {
@@ -286,12 +296,11 @@ footer {
   .fixed {
     position: fixed;
     top: 0;
-    margin-bottom: 80px;
   }
 
-  .margin-80 {
+  /* .margin-80 {
     margin-top: 80px;
-  }
+  } */
   .margin-20 {
     margin: 20px 0;
   }
