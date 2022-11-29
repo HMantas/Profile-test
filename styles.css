@@ -268,7 +268,7 @@ footer {
     text-align: center;
     transition: 0.3s;
     background-color: #1c1c1c;
-    gap: 220px;
+    gap: 20%;
   }
 
   .nav-link a {
