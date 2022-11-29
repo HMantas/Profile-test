@@ -169,6 +169,13 @@ h4 {
   font-size: 42px;
 }
 
+.line {
+  width: 30%;
+  height: 2px;
+  background-color: #1c1c1c;
+  margin-bottom: 10px;
+}
+
 /* Video */
 
 .media {
@@ -222,7 +229,6 @@ footer {
 }
 
 .socials {
-  margin: 0 0 20px 0;
   width: 200px;
   height: 70px;
   display: flex;
