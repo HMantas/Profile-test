@@ -2,21 +2,24 @@
 let burgerMenu = document.querySelector(".hamburger");
 let menuLink = document.querySelectorAll(".nav-link");
 let noDisplay = document.querySelector(".hero");
+let menuLinks = document.querySelector(".nav-links");
+let about = document.querySelector(".about");
+let footer = document.querySelector(".footer");
 
 burgerMenu.addEventListener("click", () => {
-  document.querySelector(".nav-links").classList.toggle("active");
-  document.querySelector(".about").classList.toggle("hidden");
+  menuLinks.classList.toggle("active");
+  about.classList.toggle("hidden");
   noDisplay.classList.toggle("hidden");
-  document.querySelector(".footer").classList.toggle("hidden");
-  document.querySelector(".hamburger").classList.toggle("burger-active");
+  footer.classList.toggle("hidden");
+  burgerMenu.classList.toggle("burger-active");
 });
 
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-  document.querySelector(".nav-links").classList.remove("active");
-  document.querySelector(".hamburger").classList.remove("burger-active");
-  document.querySelector(".about").classList.remove("hidden");
-  document.querySelector(".hero").classList.remove("hidden");
-  document.querySelector(".footer").classList.remove("hidden");
+menuLink.forEach(n => n.addEventListener("click", () => {
+  menuLinks.classList.remove("active");
+  burgerMenu.classList.remove("burger-active");
+  about.classList.remove("hidden");
+  noDisplay.classList.remove("hidden");
+  footer.classList.remove("hidden");
 }));
 
 // document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
