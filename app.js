@@ -22,9 +22,7 @@ menuLink.forEach(n => n.addEventListener("click", () => {
   footer.classList.remove("hidden");
 }));
 
-// document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-//   document.querySelector(".hamburger").classList.add("burger-active");
-// }));
+
 
 
 
