@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,7 +28,6 @@ h4 {
 
 .box {
   position: relative;
-  top: -250px;
   width: 280px;
   height: 320px;
   background: #1c1c1c;
@@ -154,19 +159,19 @@ h4 {
 
 .hero {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 60px;
+  height: 80vh;
+  padding: 30px 0 0 0;
+  background-image: url(./images/black.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-wrap {
-  min-width: 200px;
-  margin: 0 auto;
   color: #fff;
   text-align: center;
 }
 
 .hero-wrap h1 {
-  text-align: center;
   margin-bottom: 10px;
   font-size: 42px;
 }
@@ -195,7 +200,38 @@ h4 {
 
 /* About section */
 
-.about {
+.about__container-wrap {
+  padding: 100px 10px;
+  color: #C7C7C7;
+}
+
+.about__content-title {
+  font-size: 25px;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+
+.about__content-text {
+  line-height: 1.7;
+}
+
+.btn {
+  background: #2565E1;
+  padding: 10px 30px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+  transition: transform .3s;
+  font-size: 1rem;
+}
+
+/* Projects Section */
+
+.projects {
   /* padding: 50px; */
   width: 100%;
   min-height: 600px;
@@ -203,7 +239,7 @@ h4 {
   background:#23242a;
 }
 
-.about-wrap {
+.projects-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,6 +248,7 @@ h4 {
 }
 
 .img {
+  position: absolute;
   width: 100%;
   height: 320px;
   background: #2565E1;
@@ -269,6 +306,13 @@ footer {
   display: none;
 }
 
+.oneRem {
+  margin: 1rem 0;
+}
+
+.fixed {
+  position: fixed;
+}
 
 
 @media  (max-width: 500px) {
@@ -306,6 +350,7 @@ footer {
 
   .active {
     left: 0;
+    z-index: 100;
   }
   
   .fixed {
