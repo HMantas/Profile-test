@@ -22,6 +22,21 @@ menuLink.forEach(n => n.addEventListener("click", () => {
 }));
 
 
+let colorChanger = document.querySelector(".color-changer");
+// Font color
+let navigation = document.querySelector(".navigation");
+
+// Background color
+let bar = document.querySelector(".bar");
+let button = document.querySelector(".btn")
+
+colorChanger.addEventListener("click", () => {
+  navigation.classList.toggle("yellow-font");
+  bar.classList.toggle("yellow-background");
+  button.classList.toggle("yellow-background");
+})
+
+
 
 
 
