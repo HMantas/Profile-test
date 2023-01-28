@@ -34,17 +34,20 @@ let box = document.querySelectorAll(".box");
 
 colorChanger.addEventListener("click", () => {
   for (let i = 0; i < box.length; i++) {
-    box[i].style.backgroundColor = "#facf0f";
+    box[i].classList.toggle("yellow-background");
+    box[i].classList.add("transition");
   };
   for (let i = 0; i < button.length; i++) {
-    button[i].style.backgroundColor = "#facf0f";
+    button[i].classList.toggle("yellow-background");
+    button[i].classList.add("transition");
   };
   for (let i = 0; i < bar.length; i++) {
-    bar[i].style.backgroundColor = "#facf0f";
+    bar[i].classList.toggle("yellow-background");
   };
   navigation.classList.toggle("yellow-font");
+  navigation.classList.add("transition");
   creditsText.classList.toggle("yellow-font");
-  console.log(button);
+  creditsText.classList.add("transition");
 });
 
 
