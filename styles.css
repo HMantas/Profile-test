@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
 
 
@@ -6,7 +7,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 html {
@@ -14,10 +16,10 @@ html {
 }
 
 body {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content:flex-start;
-  align-items:flex-start;
+  align-items:flex-start; */
   min-height: 100vh;
   background: #23242a;
   /* background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(/daac885…/c157c/assets/svg/common-bg.svg); */
@@ -58,8 +60,10 @@ h4 {
 .nav-link-text {
   text-decoration: none;
   color: #2565E1;
-  font-size: 19px;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .logo {
@@ -99,23 +103,28 @@ h4 {
 .hero {
   width: 100%;
   height: 90vh;
-  padding: 2rem 0 10rem 0;
+  padding: 8rem 0 10rem 0;
   /* background-image: url(./images/black.jpg); */
   background-position: center;
   background-size: cover;
 
   display: flex;
-  align-items: end;
+  justify-content: center;
 }
 
 .hero-wrap {
-  color: #fff;
+  color: #C7C7C7;
   text-align: center;
 }
 
-.hero-wrap h1 {
+.hero-head {
   margin-bottom: 10px;
-  font-size: 42px;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.hero-text {
+  font-size: 1.2rem;
 }
 
 .line {
@@ -149,8 +158,29 @@ h4 {
 }
 
 .about__container-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
   padding: 20px;
+}
+
+.about__text {
   color: #C7C7C7;
+  padding: 10px;
+  max-width: 500px;
+}
+.about__picture {
+  width: 400px;
+  height: 300px;
+  /* background: #2565E1; */
+
+  background-image: url(./images/black.jpg);
+  background-position: center;
+  background-size: cover;
+
+  border-top-left-radius: 100px;
 }
 
 .about__content-title {
@@ -168,35 +198,32 @@ h4 {
 .btn {
   background: #2565E1;
   padding: 10px 30px;
-  color: #333;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   display: inline-block;
   font-weight: 700;
   border: none;
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
   transition: transform .3s;
-  font-size: 1rem;
   cursor: pointer;
 }
 
-/* Projects Section */
+.btn a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #333;
+}
 
-/* .projects {
-  padding: 50px;
-  width: 100%;
-  min-height: 600px;
-  margin: 0 auto;
-  background:#23242a;
-} */
+/* Projects Section */
 
 .section-title {
   font-size: 33px;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0rem 0 3rem 0;
+  margin: 0rem 0 1.5rem 0;
   color: #C7C7C7;
   padding: 5rem 0 0 0;
 }
@@ -390,14 +417,14 @@ footer {
   width: 80px;
   height: 20px;
   background: #2565E1;
-  position: fixed;
-  top: 150px;
-  right: 0;
   text-align: center;
   font-weight: bold;
   z-index: 1000;
   transition: 0.7s;
   filter: blur(10px);
+  padding: 0 auto;
+  margin: 0 auto 1.5rem;
+  cursor: pointer;
 }
 .blur {
   filter: blur(10px);
@@ -416,7 +443,7 @@ footer {
   transition: 0.7s;
 }
 
-@media  (max-width: 500px) {
+@media  (max-width: 600px) {
   .nav-links {
     position: fixed;
     height: 100%;
@@ -459,14 +486,28 @@ footer {
     top: 0;
   }
 
-  /* .margin-80 {
-    margin-top: 80px;
-  } */
   .margin-20 {
     margin: 20px 0;
   }
 
   .hamburger {
     display: block;
+  }
+}
+
+@media (min-width: 550px) {
+  .hero-head {
+    font-size: 4.5rem;
+  }
+
+  .hero-text {
+    font-size: 1.8rem;
+  }
+}
+
+
+@media (min-width: 900px) {
+  .hero-head {
+    font-size: 6rem;
   }
 }
